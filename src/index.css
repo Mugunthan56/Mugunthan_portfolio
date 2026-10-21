@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-obsidian: #050505;
+  --color-indigo-glow: #6366f1;
+  --color-cyan-glow: #06b6d4;
+  --color-emerald-glow: #10b981;
+}
+
+@layer base {
+  html {
+    font-size: 67%; /* 1rem = ~10.72px; scales entire layout to match 67% browser zoom */
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  body {
+    @apply text-zinc-300 antialiased selection:bg-cyan-500/30;
+    font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+}
+
+@layer utilities {
+  .bg-dot-matrix {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  
+  .mask-radial-faded {
+    mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 24px var(--tw-shadow-color);
+  }
+
+  @keyframes shimmer {
+    0% { transform: translateX(-150%) skewX(-20deg); }
+    100% { transform: translateX(200%) skewX(-20deg); }
+  }
+}
