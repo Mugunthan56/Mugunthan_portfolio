@@ -7,12 +7,11 @@ function SkillBlock({ name, icon, color }) {
 
   return (
     <motion.div
-      layout
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      whileHover={{ y: -5, scale: 1.1 }}
-      transition={{ type: "spring", stiffness: 200, damping: 15 }}
-      className="group relative flex flex-col items-center justify-center gap-4 p-6 md:p-8 rounded-[2rem] bg-[#08080a] border border-white/[0.08] hover:border-white/[0.18] transition-all duration-500 cursor-pointer backdrop-blur-md overflow-hidden shadow-2xl hover:-translate-y-1"
+      whileHover={{ y: -5, scale: 1.08 }}
+      transition={{ type: "spring", stiffness: 260, damping: 20 }}
+      className="group relative flex flex-col items-center justify-center gap-4 p-6 md:p-8 rounded-[2rem] bg-[#08080a] border border-white/[0.08] hover:border-white/[0.18] transition-colors duration-500 cursor-pointer overflow-hidden shadow-2xl transform-gpu will-change-transform"
     >
       {/* Architectural grid backdrop */}
       <div className="pointer-events-none absolute inset-0 opacity-50 group-hover:opacity-100 transition-opacity duration-500 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:24px_24px]" />
@@ -100,7 +99,8 @@ export function Skills() {
                   key={skill.name}
                   initial={{ opacity: 0, y: 15 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: idx * 0.05 }}
+                  transition={{ duration: 0.35, delay: idx * 0.04 }}
+                  className="transform-gpu will-change-transform"
                 >
                   <SkillBlock 
                     name={skill.name} 

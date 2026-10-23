@@ -13,7 +13,10 @@
     background-color: #050507;
     color: #ffffff;
     overflow-x: hidden;
+    overflow-y: auto;
     max-width: 100vw;
+    /* Allow native vertical pan gesture on Android Chrome */
+    touch-action: pan-y;
     /* Prevent iOS overscroll from revealing a white background */
     -webkit-overflow-scrolling: touch;
   }
@@ -23,9 +26,13 @@
     font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
     background-color: #050507;
     overflow-x: hidden;
+    overflow-y: auto;
     max-width: 100vw;
+    /* Allow native vertical pan gesture on Android Chrome */
+    touch-action: pan-y;
     /* Prevents overscroll bounce white flash on iOS/Mobile Safari */
     overscroll-behavior-y: none;
+    -webkit-overflow-scrolling: touch;
   }
 }
 

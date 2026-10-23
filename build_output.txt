@@ -5,13 +5,7 @@ rendering chunks...
 computing gzip size...
 dist/index.html                   0.73 kB │ gzip:   0.41 kB
 dist/assets/m_2-CKGAidVI.png    218.58 kB
-dist/assets/index-5XGI3Sld.css   75.75 kB │ gzip:  12.56 kB
-dist/assets/index-CeuVYsOC.js   473.29 kB │ gzip: 152.53 kB
+dist/assets/index-BoV3OPGV.css   75.83 kB │ gzip:  12.57 kB
+dist/assets/index-IvFxFEOK.js   473.42 kB │ gzip: 152.59 kB
 
-[32m✓ built in 27.21s[39m
-[33m[33m[PLUGIN_TIMINGS] [0mJavaScript callbacks ran for 2.7s of this 27.2s build (10%).
-The slowest callbacks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
-  - plugin vite:css-post renderChunk (7%, 1.8s, 1 call)
-Additional callback time came from callbacks under 1s.
-See https://rolldown.rs/reference/InputOptions.checks#bundlertimings for more details.
-[39m
+[32m✓ built in 717ms[39m

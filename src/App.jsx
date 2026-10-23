@@ -14,6 +14,11 @@ const noiseSvgUrl = `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns=
 
 export default function App() {
   useEffect(() => {
+    // Lenis intercepts touch events on Android even with smoothTouch:false.
+    // Skip it entirely on touch devices so native scroll is never blocked.
+    const isTouchDevice = window.matchMedia("(pointer: coarse)").matches;
+    if (isTouchDevice) return;
+
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -38,7 +43,7 @@ export default function App() {
     };
   }, []);
   return (
-    <div className="min-h-[100dvh] text-zinc-100 flex flex-col pt-12 overflow-x-hidden relative selection:bg-blue-500/30 antialiased">
+    <div className="min-h-[100dvh] text-zinc-100 flex flex-col pt-12 overflow-x-hidden relative selection:bg-blue-500/30 antialiased" style={{ touchAction: "pan-y" }}>
       {/* Isolated Midnight Aurora Background */}
       <div className="fixed inset-0 z-[-1] pointer-events-none bg-[#050507] transform-gpu">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_40%,rgba(30,58,138,0.25)_0%,transparent_40%),radial-gradient(circle_at_85%_60%,rgba(88,28,135,0.25)_0%,transparent_40%)] transform-gpu" />
