@@ -50,7 +50,7 @@ export default function App() {
         <div className="absolute inset-0 opacity-20 mix-blend-overlay" style={{ backgroundImage: noiseSvgUrl, willChange: "transform" }}></div>
       </div>
 
-      <div className="relative z-10 flex flex-col min-h-[100dvh] w-full">
+      <div className="relative z-10 flex flex-col w-full">
         <Navbar />
         <main className="flex-grow">
           <Hero />

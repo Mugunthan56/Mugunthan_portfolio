@@ -3,9 +3,9 @@ transforming...
 ✓ 2303 modules transformed.
 rendering chunks...
 computing gzip size...
-dist/index.html                   0.73 kB │ gzip:   0.41 kB
+dist/index.html                   0.73 kB │ gzip:   0.40 kB
 dist/assets/m_2-CKGAidVI.png    218.58 kB
 dist/assets/index-BoV3OPGV.css   75.83 kB │ gzip:  12.57 kB
-dist/assets/index-IvFxFEOK.js   473.42 kB │ gzip: 152.59 kB
+dist/assets/index-CSuIhJCs.js   473.48 kB │ gzip: 152.59 kB
 
-[32m✓ built in 717ms[39m
+[32m✓ built in 682ms[39m

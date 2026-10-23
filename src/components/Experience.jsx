@@ -121,12 +121,12 @@ function TiltCard({ children, className = "", hoverHex = "100,100,100", visual }
       />
 
       {/* SVG Wireframe Illustration component injected below text */}
-      <div className="absolute inset-0 z-0">
+      <div className="pointer-events-none absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0)_0%,rgba(5,5,5,0.7)_100%)] z-10 pointer-events-none hidden group-hover:block transition-all" />
         {visual}
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-t from-obsidian/95 via-obsidian/60 to-obsidian/20 z-0" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-obsidian/95 via-obsidian/60 to-obsidian/20 z-0" />
 
       <div 
         className="relative z-10 p-6 sm:p-7 md:p-10 flex flex-col h-full w-full"

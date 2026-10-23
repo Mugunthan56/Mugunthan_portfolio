@@ -192,7 +192,7 @@ export function Projects() {
               >
                <div className="relative w-full h-48 bg-zinc-950">
                  <img src={hoveredProject.image} alt={hoveredProject.title} className="w-full h-full object-cover" />
-                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-transparent to-transparent"></div>
+                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-zinc-900 via-transparent to-transparent"></div>
                  {hoveredProject.badge && (
                    <div className="absolute top-4 right-4 bg-white/10 backdrop-blur-md rounded-full px-2.5 py-0.5 font-mono text-[9px] uppercase tracking-wider text-white border border-white/20 shadow-lg">
                      {hoveredProject.badge}

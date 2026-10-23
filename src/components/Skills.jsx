@@ -75,7 +75,7 @@ export function Skills() {
                   <motion.div
                     layoutId="activeTabIndicator"
                     transition={{ type: "spring", stiffness: 200, damping: 20 }}
-                    className="absolute inset-0 bg-cyan-950/30 border border-cyan-500/50 rounded-full shadow-[0_0_20px_rgba(6,182,212,0.2)]"
+                    className="pointer-events-none absolute inset-0 bg-cyan-950/30 border border-cyan-500/50 rounded-full shadow-[0_0_20px_rgba(6,182,212,0.2)]"
                   />
                 )}
               </button>
