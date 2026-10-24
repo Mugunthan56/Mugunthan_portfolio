@@ -161,12 +161,12 @@ export function Hero() {
 
         {/* Right Column: Orbital Mechanics Node Graph */}
         <div
-          className="relative w-full h-[500px] lg:h-[600px] mt-12 lg:mt-0 flex items-center justify-center lg:translate-x-12 lg:justify-self-end overflow-visible"
+          className="relative w-full min-h-[500px] h-[500px] lg:h-[600px] mt-12 lg:mt-0 flex items-center justify-center lg:translate-x-12 lg:justify-self-end overflow-visible"
         >
           
           {/* Mobile scaling wrapper — shrinks orbital graph to fit smaller viewports */}
-          <div className="relative w-full max-w-[100vw] overflow-hidden flex items-center justify-center py-6 md:py-0 md:overflow-visible">
-            <div className="scale-[0.62] sm:scale-[0.8] md:scale-100 origin-center transition-transform duration-300 transform-gpu">
+          <div className="relative w-full max-w-[100vw] overflow-visible flex items-center justify-center py-14 md:py-0">
+            <div className="scale-[0.7] sm:scale-[0.82] md:scale-100 origin-center transition-transform duration-300 transform-gpu">
 
           {/* Static Center Node (Hub) */}
           <div className="absolute z-20 pointer-events-auto" style={{ left: "50%", top: "50%", transform: "translate(-50%, -50%)" }}>
