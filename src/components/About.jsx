@@ -98,8 +98,8 @@ export function About() {
             className="flex flex-col w-full min-w-0 gap-5 md:gap-6 items-center md:items-start"
           >
             {/* Paragraphs with keyword highlights */}
-            <div className="space-y-5 md:space-y-6 w-full max-w-[92%] sm:max-w-lg md:max-w-2xl mx-auto md:mx-0 text-center md:text-left">
-              <p className="text-[15px] sm:text-base md:text-xl text-zinc-400 leading-[1.85] font-normal">
+            <div className="space-y-5 md:space-y-6 w-full max-w-[92%] sm:max-w-lg md:max-w-2xl mx-auto md:mx-0 text-justify">
+              <p className="text-[15px] sm:text-base md:text-xl text-zinc-400 leading-[1.85] font-normal text-justify">
                 I am a{" "}
                 <span className="text-zinc-100 font-medium">Full-Stack Software Engineer</span>{" "}
                 and final-year Computer Science student with a strong emphasis on software
@@ -113,7 +113,7 @@ export function About() {
                 frontend applications.
               </p>
 
-              <p className="text-[15px] sm:text-base md:text-xl text-zinc-500 leading-[1.85] font-normal">
+              <p className="text-[15px] sm:text-base md:text-xl text-zinc-500 leading-[1.85] font-normal text-justify">
                 Currently pursuing my B.E. in Computer Science and Engineering at{" "}
                 <span className="text-zinc-300 font-medium">RVS Institute of Technology</span>,
                 Coimbatore. Beyond academics, I have actively participated in national-level
