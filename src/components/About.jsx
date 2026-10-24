@@ -15,7 +15,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="scroll-mt-24 py-16 md:py-32 px-6 md:px-12 max-w-7xl mx-auto w-full z-10 relative overflow-hidden"
+      className="scroll-mt-24 py-16 md:py-32 px-6 md:px-12 max-w-7xl mx-auto w-full z-10 relative"
     >
       {/* Inner content width mirrors Skills.jsx */}
       <div className="max-w-5xl mx-auto flex flex-col gap-12">
