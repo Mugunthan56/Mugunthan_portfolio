@@ -165,8 +165,8 @@ export function Hero() {
         >
           
           {/* Mobile scaling wrapper — shrinks orbital graph to fit smaller viewports */}
-          <div className="relative w-full max-w-[100vw] overflow-visible flex items-center justify-center py-14 md:py-0">
-            <div className="scale-[0.7] sm:scale-[0.82] md:scale-100 origin-center transition-transform duration-300 transform-gpu">
+          <div className="relative w-full max-w-[100vw] overflow-visible flex items-center justify-center py-10 sm:py-0">
+            <div className="scale-[0.75] sm:scale-[0.85] md:scale-100 origin-center transition-transform duration-300 transform-gpu">
 
           {/* Static Center Node (Hub) */}
           <div className="absolute z-20 pointer-events-auto" style={{ left: "50%", top: "50%", transform: "translate(-50%, -50%)" }}>
